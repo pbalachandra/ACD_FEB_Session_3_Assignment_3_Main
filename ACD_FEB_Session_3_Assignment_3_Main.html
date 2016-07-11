@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FORM</title>
+	<style type="text/css">
+		body{
+			background: url(blue-background.jpg);
+			background-size: cover;
+		}
+		#details{
+			background: url(blue-background.jpg);
+			background-size: cover;
+			border:solid 2px;
+			border-color: white;
+			width: 40%;
+			margin: auto;
+			padding: 10px 5px 5px 5px;
+		}
+		p {
+			
+			background: url(lightblue-background.jpg);
+			border: solid 2px;
+			border-color: white;
+			padding: 10px;
+			border-radius: 10px;
+			margin: 3px;
+			font-weight: bold;
+
+		}
+		#details input[type ='text'], 
+		#details input[type ='email'],
+		#details input[type ='phone']
+		{
+			width: 250px;
+			height: 20px;
+			padding: 3px;
+			border-radius: 5px;
+		}
+		#details textarea
+		{
+			width: 250px;
+			padding: 2px;
+			border-radius: 5px;
+			resize: vertical;
+		}
+		#details button{
+			display: block;
+			margin: auto;
+			border-radius: 20px;
+			width: 25%;
+			height: 35px;
+			background-color: black;
+			color: white;
+		}
+		#details input[type='radio']
+		{
+			float: left;
+			padding: auto;
+			margin-left: 10px;	
+			margin-top: 5px;
+
+		}
+		legend{
+			font-weight: bold;
+			color: white;
+		}
+				
+		label{
+			float: left;
+			width: 150px;
+			padding: auto;
+
+		}
+		fieldset{
+			border: none;
+		}
+		.radiolabel{
+			width: 100px;
+			margin-top: 3px;
+			padding: 0px 0px 0px 0px;
+
+		}
+				
+	</style>
+</head>
+<body>
+<form id = details>
+	<fieldset>
+	<legend>Step 1 : Your details</legend>
+	<p>	<label for="name">Name</label>
+	<input type="text" name="name" placeholder="First and last name">
+	</p>
+	<p>	<label for="email">Email</label>
+	<input type="email" name="email" placeholder="example@domain.com">
+	</p>
+	<p>	<label for="phone">Phone</label>
+	<input type="phone" name="phone" placeholder="e.g. +44750000000000">
+	</p>
+	</fieldset>
+
+	<fieldset>
+	<legend>Step 2 : Delivery address</legend>
+	<p>	<label for="address">Address</label>
+	<textarea name="address" rows="5"></textarea>
+	</p>
+	<p>	<label for="postcode">Post code</label>
+	<input type="text" name="postcode">
+	</p>
+	<p>	<label for="country">Country</label>
+	<input type="text" name="country">
+	</p>
+	</fieldset>
+
+	<fieldset>
+	<legend>Step 3 : Card details</legend>
+	
+	<p style = "height:40px;">
+		<label>Card type</label>
+		<br>
+		<input type="radio" name="cardtype" id="visa" value="visa"/>
+		
+		<label for="visa" class="radiolabel"> 
+		<img src="visa.gif" width="15%"/>VISA</label>
+		
+		<input type="radio" name="cardtype" id="amex" value="amex"/>
+		
+		<label for="amex" class="radiolabel">
+		<img src="amex.jpg" width="15%"/>AmEx</label>
+		
+		<input type="radio" name="cardtype" id="mastercard" value="mastercard"/>
+		<label for="mastercard" class="radiolabel">
+		<img src="mastercard.png" width="15%"/>Mastercard</label>
+		
+	</p>
+	
+	<p>	<label for="cardnumber">Card number</label>
+	<input type="text" name="cardnumber">
+	</p>
+	<p>	<label for="securitycode">Security code</label>
+	<input type="text" name="securitycode">
+	</p>
+	<p>	<label for="cardname">Name on card</label>
+	<input type="text" name="cardname" placeholder="exact name as on the card">
+	</p>
+	<fieldset>
+
+	<fieldset>
+		<button type="submit" name="submit">BUY IT!</button>
+	<fieldset>
+
+</form>
+</body>
+</html>
